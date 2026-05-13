@@ -1,1 +1,38 @@
-code của css
+*{
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14pt;
+	line-height:1.5
+}
+div.container{
+	padding:0px 150;
+}
+.tieude{
+	font-weight:bolder;
+	font-size:16pt;
+	color:blue;	
+	text-tranform:uppercase;
+	padding: 10px 0px 10px;
+}
+img{
+	border-radius:5%;
+	width:50%;
+	max-width:200px;
+}
+ul{
+	list-style-type:square;
+	/*list-style-image:url("../assets/images/avatar.jpg");*/
+	list-style-position: inside;
+}	
+body {
+    background: Ivory;
+}
+
+h1 {
+    color: blue;
+}
+
+h2{
+	color:blue;
+}
