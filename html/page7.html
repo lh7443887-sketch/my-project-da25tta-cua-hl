@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <title>Hóa đơn thanh toán</title>
+    <meta charset="UTF-8" />
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 600px;
+      margin: auto;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>Hóa đơn mua hàng</h1>
+    <table>
+      <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>so luong</th>
+        <th>dong gia</th>
+        <th>đvt</th>
+        <th>thanh tien</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>cafe Trung Nguyên</td>
+        <td class="so luong">3</td>
+        <td class="dong gia">30</td>
+        <td class="thanh tien">?</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>gấu bông</td>
+        <td class="so luong">5</td>
+        <td class="dong gia">199</td>
+        <td class="thanh tien">?</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>monter</td>
+        <td class="so luong">10</td>
+        <td class="dong gia">20</td>
+        <td class="thanh tien">?</td>
+      </tr>
+
+      <tr>
+        <td colspan="5">Tổng thanh toán</td>
+        <td id="thanh toán">?</td>
+      </tr>
+    </table>
+    <script>
+      const sl = document.getElementsByClassName("so luong");
+      const dg = document.getElementsByClassName("dong gia");
+      const tt = document.getElementsByClassName("thanh tien");
+      let tongthanhtoan = 0;
+      for (let i = 0; i < sl.length; i++) {
+        tt[i].innerHTML = Number(sl[i].innerHTML) * Number(dg[i].innerHTML);
+        tongthanhtoan += Number(tt[i].innerHTML);
+      }
+      document.getElementById("thanh toán").innerHTML = tongthanhtoan;
+    </script>
+  </body>
+</html>
