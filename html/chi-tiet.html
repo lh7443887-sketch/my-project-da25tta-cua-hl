@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chi tiết sản phẩm</title>
+
+    <script src="../JS/hl1.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <img id="image" width="300" />
+
+      <h2 id="name"></h2>
+
+      <p id="price"></p>
+
+      <p id="description"></p>
+      <a href="page8.html" class="back-btn"> ← Quay lại danh sách </a>
+    </div>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+
+      const productID = urlParams.get("masp");
+
+      const foundProduct = products.find((obj) => obj.id == productID);
+
+      console.log(productID);
+      console.log(foundProduct);
+
+      if (foundProduct) {
+        document.getElementById("name").innerText = foundProduct.name;
+
+        document.getElementById("price").innerText = foundProduct.price;
+
+        document.getElementById("description").innerText =
+          foundProduct.description;
+
+        document.getElementById("image").src = foundProduct.image;
+      } else {
+        document.body.innerHTML = "<h2>Không tìm thấy sản phẩm</h2>";
+      }
+    </script>
+  </body>
+</html>
