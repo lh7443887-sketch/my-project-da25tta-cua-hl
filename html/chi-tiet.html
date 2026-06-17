@@ -1,46 +1,340 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Chi tiết sản phẩm</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi tiết sản phẩm</title>
 
-    <script src="../JS/hl1.js"></script>
-  </head>
+<script src="../JS/hl1.js"></script>
 
-  <body>
-    <div class="container">
-      <img id="image" width="300" />
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.product-image img{
+    width:100%;
+    max-width:450px;
+    height:350px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+    margin:auto;
+body{
+    background:#f5f5f5;
+}
 
-      <h2 id="name"></h2>
+header{
+    background:#ff5722;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:30px;
+    font-weight:bold;
+}
 
-      <p id="price"></p>
+.container{
+    width:1200px;
+    max-width:95%;
+    margin:30px auto;
+}
 
-      <p id="description"></p>
-      <a href="page8.html" class="back-btn"> ← Quay lại danh sách </a>
+.product-detail{
+    background:white;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    padding:30px;
+
+    display:flex;
+    gap:40px;
+}
+
+.product-image{
+    flex:1;
+}
+
+.product-image img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.product-info{
+    flex:1;
+}
+
+#name{
+    font-size:40px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.rating{
+    color:gold;
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+#price{
+    font-size:35px;
+    color:#e53935;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+#description{
+    line-height:1.8;
+    color:#555;
+    margin-bottom:25px;
+}
+
+.quantity{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.quantity button{
+    width:40px;
+    height:40px;
+    border:none;
+    background:#eee;
+    border-radius:8px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.quantity input{
+    width:60px;
+    text-align:center;
+    font-size:18px;
+}
+
+.btn{
+    padding:15px 25px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.cart-btn{
+    background:#ff5722;
+    color:white;
+}
+
+.cart-btn:hover{
+    background:#e64a19;
+}
+
+.like-btn{
+    background:white;
+    color:#ff5722;
+    border:2px solid #ff5722;
+    margin-left:10px;
+}
+
+.info-box{
+    margin-top:30px;
+    padding:20px;
+    background:#fafafa;
+    border-radius:10px;
+}
+
+.info-box p{
+    margin:10px 0;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:25px;
+    text-decoration:none;
+    color:white;
+    background:#2196f3;
+    padding:12px 20px;
+    border-radius:10px;
+}
+
+.related{
+    margin-top:40px;
+}
+
+.related h2{
+    margin-bottom:20px;
+}
+
+.related-products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h4{
+    padding:10px;
+}
+
+.card p{
+    color:red;
+    padding:0 10px 10px;
+}
+
+@media(max-width:768px){
+    .product-detail{
+        flex-direction:column;
+    }
+
+    .related-products{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+ Foodie Buddy 🍽️
+</header>
+
+<div class="container">
+
+    <div class="product-detail">
+
+        <div class="product-image">
+            <img id="image">
+            
+        </div>
+
+        <div class="product-info">
+
+            <h1 id="name"></h1>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ (999+ đánh giá)
+            </div>
+
+            <p id="price"></p>
+
+            <p id="description"></p>
+
+            <div class="quantity">
+                <button onclick="minus()">-</button>
+
+                <input type="number" id="qty" value="1" min="1">
+
+                <button onclick="plus()">+</button>
+            </div>
+
+            <button class="btn cart-btn">
+                🛒 Thêm vào giỏ hàng
+            </button>
+
+            <button class="btn like-btn">
+                ❤️ Yêu thích
+            </button>
+
+            <div class="info-box">
+                <h3>Thông tin sản phẩm</h3>
+
+                <p>🚚 Giao hàng trong 30 phút</p>
+                <p>🎁 Miễn phí ship đơn từ 100.000đ</p>
+                <p>✅ Đảm bảo chất lượng món ăn</p>
+                <p>🔥 Món bán chạy trong tuần</p>
+            </div>
+
+            <a href="page8.html" class="back-btn">
+                ← Quay lại danh sách
+            </a>
+
+        </div>
+
     </div>
 
-    <script>
-      const urlParams = new URLSearchParams(window.location.search);
+    <div class="related">
+        <h2>Sản phẩm liên quan</h2>
 
-      const productID = urlParams.get("masp");
+        <div class="related-products" id="relatedProducts">
 
-      const foundProduct = products.find((obj) => obj.id == productID);
+        </div>
+    </div>
 
-      console.log(productID);
-      console.log(foundProduct);
+</div>
 
-      if (foundProduct) {
-        document.getElementById("name").innerText = foundProduct.name;
+<script>
 
-        document.getElementById("price").innerText = foundProduct.price;
+function plus(){
+    let qty = document.getElementById("qty");
+    qty.value = Number(qty.value)+1;
+}
 
-        document.getElementById("description").innerText =
-          foundProduct.description;
+function minus(){
+    let qty = document.getElementById("qty");
 
-        document.getElementById("image").src = foundProduct.image;
-      } else {
-        document.body.innerHTML = "<h2>Không tìm thấy sản phẩm</h2>";
-      }
-    </script>
-  </body>
+    if(Number(qty.value)>1){
+        qty.value = Number(qty.value)-1;
+    }
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+const productID = urlParams.get("masp");
+
+const foundProduct = products.find(obj => obj.id == productID);
+
+if(foundProduct){
+
+    document.getElementById("name").innerText =
+    foundProduct.name;
+
+    document.getElementById("price").innerText =
+    "Giá: " + foundProduct.price;
+
+    document.getElementById("description").innerText =
+    foundProduct.description;
+
+    document.getElementById("image").src =
+    foundProduct.image;
+
+}else{
+
+    document.body.innerHTML =
+    "<h2>Không tìm thấy sản phẩm</h2>";
+}
+
+const relatedDiv =
+document.getElementById("relatedProducts");
+
+products.slice(0,4).forEach(product=>{
+
+    relatedDiv.innerHTML += `
+    <div class="card">
+        <img src="${product.image}">
+        <h4>${product.name}</h4>
+        <p>${product.price}</p>
+    </div>
+    `;
+});
+
+</script>
+
+</body>
 </html>
