@@ -1,19 +1,67 @@
 <!doctype html>
 <html lang="vi">
   <head>
-    <title>Trang chủ</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        text-align: center;
+        margin: 0;
+      }
+
+      header {
+        background: #007bff;
+        color: white;
+        padding: 20px;
+      }
+
+      .container {
+        width: 80%;
+        margin: 30px auto;
+      }
+
+      .menu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      .menu a {
+        text-decoration: none;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        color: #333;
+        font-weight: bold;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+
+      .menu a:hover {
+        background: #007bff;
+        color: white;
+        transform: translateY(-5px);
+      }
+    </style>
   </head>
-  <script src="JS/hl1.js"></script>
   <body>
-    <ul>
-      <li>
+    <header><h1>TRANG CHỦ</h1></header>
+
+    <div class="container">
+      <div class="menu">
+        <a href="html/page1.html">Trang thông tin cá nhân</a>
+        <a href="html/page2.html">Login</a>
+        <a href="html/page3.html">Đăng ký tham gia CLB TEAKWONDO</a>
         <a href="html/page4.html">Hiển thị lời chào</a>
         <a href="html/page5.html">Tính tuổi</a>
         <a href="html/page6.html">Tính diện tích hình chữ nhật</a>
-        <a href="html/page7.html">Tính diện tích hình chữ nhật</a>
-        <a href="html/page8.html">Tính diện tích hình chữ nhật</a>
-      </li>
-    </ul>
+        <a href="html/page7.html">Hóa đơn mua hàng</a>
+        <a href="html/page8.html">Cửa hàng 🍽️ Foodie Buddy 🍽️</a>
+      </div>
+    </div>
   </body>
 </html>

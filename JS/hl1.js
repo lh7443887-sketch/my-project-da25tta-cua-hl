@@ -13,7 +13,8 @@ const products = [
     id: 1,
     name: "Mỳ Cay",
     price: "45ka",
-    description:"Mô tả đặc trưng: Mỳ cay là món ăn nổi tiếng với hương vị cay nồng hấp dẫn, nước dùng đậm đà được ninh từ xương và các loại gia vị đặc biệt. Sợi mì dai ngon kết hợp cùng nhiều loại topping như thịt bò, hải sản, xúc xích, nấm và rau xanh, tạo nên hương vị thơm ngon, kích thích vị giác và phù hợp với những người yêu thích món ăn cay. 🌶️🍜",
+    description:
+      "Mô tả đặc trưng: Mỳ cay là món ăn nổi tiếng với hương vị cay nồng hấp dẫn, nước dùng đậm đà được ninh từ xương và các loại gia vị đặc biệt. Sợi mì dai ngon kết hợp cùng nhiều loại topping như thịt bò, hải sản, xúc xích, nấm và rau xanh, tạo nên hương vị thơm ngon, kích thích vị giác và phù hợp với những người yêu thích món ăn cay. 🌶️🍜",
     image: "../assets/img/mycay.jpg",
     link: "chi-tiet.html",
   },
@@ -21,7 +22,8 @@ const products = [
     id: 2,
     name: "Bún đậu",
     price: "95ka",
-    description:"Mô tả đặc trưng: Bún đậu mắm tôm là món ăn dân dã nổi tiếng của Việt Nam với hương vị đậm đà và hấp dẫn. Món ăn gồm bún lá mềm, đậu hũ chiên vàng giòn bên ngoài nhưng vẫn mềm bên trong, ăn kèm chả cốm, thịt luộc, nem rán và các loại rau sống tươi ngon. Điểm nhấn đặc biệt là mắm tôm được pha vừa miệng, tạo nên hương vị đặc trưng khó quên. Sự kết hợp hài hòa giữa các nguyên liệu mang đến trải nghiệm ẩm thực thơm ngon, đậm chất truyền thống. 🍜🥢😋",
+    description:
+      "Mô tả đặc trưng: Bún đậu mắm tôm là món ăn dân dã nổi tiếng của Việt Nam với hương vị đậm đà và hấp dẫn. Món ăn gồm bún lá mềm, đậu hũ chiên vàng giòn bên ngoài nhưng vẫn mềm bên trong, ăn kèm chả cốm, thịt luộc, nem rán và các loại rau sống tươi ngon. Điểm nhấn đặc biệt là mắm tôm được pha vừa miệng, tạo nên hương vị đặc trưng khó quên. Sự kết hợp hài hòa giữa các nguyên liệu mang đến trải nghiệm ẩm thực thơm ngon, đậm chất truyền thống. 🍜🥢😋",
     image: "../assets/img/bundau.jpg",
     link: "chi-tiet.html",
   },
@@ -29,7 +31,8 @@ const products = [
     id: 3,
     name: "Bánh Khọt",
     price: "5ka 1 cái ",
-    description: "Mô tả đặc trưng:Bánh khọt là món ăn đặc sản nổi tiếng của miền Nam Việt Nam, đặc biệt phổ biến ở Vũng Tàu. Bánh được làm từ bột gạo, đổ trong khuôn nhỏ tạo lớp vỏ vàng giòn bên ngoài và mềm thơm bên trong. Nhân bánh thường là tôm tươi, thịt hoặc hải sản, phía trên được rắc thêm hành lá và bột tôm. Khi ăn, bánh khọt được cuốn cùng rau sống, rau thơm và chấm với nước mắm chua ngọt, tạo nên hương vị hài hòa, thơm ngon và hấp dẫn. 🦐🥬🥢😋",
+    description:
+      "Mô tả đặc trưng:Bánh khọt là món ăn đặc sản nổi tiếng của miền Nam Việt Nam, đặc biệt phổ biến ở Vũng Tàu. Bánh được làm từ bột gạo, đổ trong khuôn nhỏ tạo lớp vỏ vàng giòn bên ngoài và mềm thơm bên trong. Nhân bánh thường là tôm tươi, thịt hoặc hải sản, phía trên được rắc thêm hành lá và bột tôm. Khi ăn, bánh khọt được cuốn cùng rau sống, rau thơm và chấm với nước mắm chua ngọt, tạo nên hương vị hài hòa, thơm ngon và hấp dẫn. 🦐🥬🥢😋",
     image: "../assets/img/banhkot.webp",
     link: "chi-tiet.html",
   },
@@ -37,7 +40,8 @@ const products = [
     id: 4,
     name: "Bún chả giò",
     price: "25ka",
-    description:"Mô tả đặc trưng:Bún chả giò là món ăn quen thuộc của ẩm thực Việt Nam, gồm bún tươi mềm kết hợp với chả giò chiên vàng giòn rụm. Món ăn thường được dùng kèm rau sống, dưa leo, giá đỗ và các loại rau thơm tươi ngon. Nước mắm chua ngọt đậm đà giúp hòa quyện các nguyên liệu, tạo nên hương vị thơm ngon, hấp dẫn và cân bằng giữa vị giòn, mềm, chua, ngọt. Đây là món ăn được nhiều người yêu thích nhờ sự thanh mát nhưng vẫn đầy đủ dinh dưỡng.",
+    description:
+      "Mô tả đặc trưng:Bún chả giò là món ăn quen thuộc của ẩm thực Việt Nam, gồm bún tươi mềm kết hợp với chả giò chiên vàng giòn rụm. Món ăn thường được dùng kèm rau sống, dưa leo, giá đỗ và các loại rau thơm tươi ngon. Nước mắm chua ngọt đậm đà giúp hòa quyện các nguyên liệu, tạo nên hương vị thơm ngon, hấp dẫn và cân bằng giữa vị giòn, mềm, chua, ngọt. Đây là món ăn được nhiều người yêu thích nhờ sự thanh mát nhưng vẫn đầy đủ dinh dưỡng.",
     image: "../assets/img/bunchagio.jpg",
     link: "chi-tiet.html",
   },
@@ -59,7 +63,7 @@ const products = [
     image: "../assets/img/garan.jpg",
     link: "chi-tiet.html",
   },
-   {
+  {
     id: 7,
     name: "Nem nướng",
     price: "49ka",
@@ -68,7 +72,7 @@ const products = [
     image: "../assets/img/nemnuong.jpeg",
     link: "chi-tiet.html",
   },
-   {
+  {
     id: 8,
     name: "Phở hà nội",
     price: "40ka",
@@ -77,7 +81,7 @@ const products = [
     image: "../assets/img/pho.jpg",
     link: "chi-tiet.html",
   },
-   {
+  {
     id: 9,
     name: "Sushi",
     price: "199ka",
@@ -86,7 +90,7 @@ const products = [
     image: "../assets/img/sushi.jpg",
     link: "chi-tiet.html",
   },
-   {
+  {
     id: 10,
     name: "Tokbokki",
     price: "35ka",
@@ -95,7 +99,7 @@ const products = [
     image: "../assets/img/tobokki.jpg",
     link: "chi-tiet.html",
   },
-   {
+  {
     id: 11,
     name: "Tôm chiên",
     price: "39ka",
@@ -127,7 +131,7 @@ const products = [
     name: "JURA",
     price: "15ka",
     description:
-      "Mô tả đặc trưng: description:JURA là dòng bia có hương vị thơm ngon, cân bằng giữa vị malt dịu nhẹ và hậu vị êm mượt. Với màu sắc hấp dẫn cùng hương thơm đặc trưng, sản phẩm mang đến trải nghiệm thưởng thức tươi mát và dễ chịu cho người dùng.", 
+      "Mô tả đặc trưng: description:JURA là dòng bia có hương vị thơm ngon, cân bằng giữa vị malt dịu nhẹ và hậu vị êm mượt. Với màu sắc hấp dẫn cùng hương thơm đặc trưng, sản phẩm mang đến trải nghiệm thưởng thức tươi mát và dễ chịu cho người dùng.",
     image: "../assets/img/JURA.jpg",
     link: "chi-tiet.html",
   },
@@ -136,7 +140,7 @@ const products = [
     name: "HÀ NỘI",
     price: "15ka",
     description:
-      "Mô tả đặc trưng:description:Bia Hà Nội là thương hiệu bia lâu đời của Việt Nam, nổi tiếng với hương vị đậm đà, thơm mùi malt và hậu vị cân bằng. Sản phẩm có màu vàng sáng hấp dẫn, vị bia dễ uống và mang nét đặc trưng của văn hóa ẩm thực Hà Nội.", 
+      "Mô tả đặc trưng:description:Bia Hà Nội là thương hiệu bia lâu đời của Việt Nam, nổi tiếng với hương vị đậm đà, thơm mùi malt và hậu vị cân bằng. Sản phẩm có màu vàng sáng hấp dẫn, vị bia dễ uống và mang nét đặc trưng của văn hóa ẩm thực Hà Nội.",
     image: "../assets/img/HANOI.jpg",
     link: "chi-tiet.html",
   },
@@ -153,7 +157,8 @@ const products = [
     id: 17,
     name: "PILSNER",
     price: "15ka",
-    description:"Mô tả đặc trưng: Pilsner là dòng bia vàng nổi tiếng với hương vị tươi mát, thơm nhẹ và hậu vị cân bằng. Sản phẩm mang đến cảm giác sảng khoái và dễ thưởng thức trong nhiều dịp khác nhau.",
+    description:
+      "Mô tả đặc trưng: Pilsner là dòng bia vàng nổi tiếng với hương vị tươi mát, thơm nhẹ và hậu vị cân bằng. Sản phẩm mang đến cảm giác sảng khoái và dễ thưởng thức trong nhiều dịp khác nhau.",
     image: "../assets/img/PILSNER.webp",
     link: "chi-tiet.html",
   },
@@ -161,11 +166,11 @@ const products = [
     id: 18,
     name: "Sài Gòn",
     price: "13ka",
-    description:"Mô tả dặc trưng: Bia Sài Gòn là dòng bia truyền thống được nhiều người yêu thích nhờ hương vị đậm đà, màu vàng đẹp mắt và cảm giác tươi mát khi thưởng thức.",
+    description:
+      "Mô tả dặc trưng: Bia Sài Gòn là dòng bia truyền thống được nhiều người yêu thích nhờ hương vị đậm đà, màu vàng đẹp mắt và cảm giác tươi mát khi thưởng thức.",
     image: "../assets/img/SG.jpg",
     link: "chi-tiet.html",
   },
-
 ];
 
 function createItem(obj) {
@@ -174,18 +179,20 @@ function createItem(obj) {
 
   //Tạo 1 container có class = "item"
   const item = document.createElement("div"); //<div></div>
-  item.setAttribute("class", "item card m-5"); //<div class = "item"></div>
+  item.setAttribute("class", "item card col-md-4"); //<div class = "item"></div>
   //tạo 2 khung chứa hình ảnh và thông tin
   //tạo 1 container chứa hình ảnh có class = "image"==>chỉ có 1 con là img
   const containerImage = document.createElement("div"); //<div></div>
-  containerImage.setAttribute("class", "image"); //<div class = "image"></div>
+  containerImage.setAttribute("style", "text-align:center;padding-top:10px;"); //<div class = "image"></div>
 
   //tao hình ảnh
   const img = document.createElement("img");
   img.setAttribute("src", obj.image);
   img.setAttribute("alt", obj.name);
-  img.setAttribute("style", "width:80%;height:200px;");
-  //đưa vào khung chứa ảnh
+  img.setAttribute(
+    "style",
+    "width:100%;height:180px;object-fit:cover;border-radius:10px;",
+  );
   containerImage.appendChild(img);
 
   //tạo 1 container chứa thông tin sản phẩm có class = "info"==> có 3 <p>và 1 <a>
@@ -202,7 +209,7 @@ function createItem(obj) {
   price.innerHTML = obj.price + "/phần";
   //tạo <p> chứa mô tả sản phẩm
   const description = document.createElement("p");
-  description.innerHTML = obj.description;
+  description.innerHTML = obj.description.substring(0, 100) + "...";
 
   //tạo <a> chứa liên kết
   const linkProduct = document.createElement("a");

@@ -1,46 +1,110 @@
-*{
-	font-size:20px;
-	font-family: Arial, Helvetica, sans-serif;
-	color: Indigo ;
-}
-#h2{
-	text-align : center;
-}
-.coinstan {
-	padding :15px 15px;
-	background-color : LightPink;
-	display : block;
-	margin : 100px 600px;
-	border-radius: 10px;
-}
-label{
-	display : block;
-	margin : 8px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-input.frlogin2{
-	display: block;
-	margin : 7px;
-	
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-}
-input.button{
-	
-margin : 7px;
+  background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
 
+  font-family: Arial, sans-serif;
 }
-input.buttonn{
-	
-margin : 7px;
+
+.login-box {
+  width: 400px;
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-form#formlogin{
-	
-	background-color :HoneyDew;
-	
-	
+
+.login-box {
+  width: 400px;
+  background: white;
+  padding: 35px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
-.input1{
-	width:80%;
-	margin : 5px ;
-	
+
+label {
+  display: block;
+
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 10px;
+
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+
+  border-color: #ff4f81;
+}
+
+.button-group {
+  margin-top: 15px;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+button {
+  width: 48%;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.btn-login {
+  background: #ff4f81;
+}
+
+.btn-login:hover {
+  background: #e63c70;
+}
+
+.btn-cancel {
+  background: #888;
+}
+
+.btn-cancel:hover {
+  background: #666;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
